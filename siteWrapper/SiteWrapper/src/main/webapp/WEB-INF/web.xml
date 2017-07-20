@@ -27,12 +27,12 @@
     <jsp-property-group>
       <url-pattern>*.jsp</url-pattern>
       <page-encoding>UTF-8</page-encoding>
-      <include-prelude>/WEB-INF/include.jsp</include-prelude>
+      <include-prelude>/WEB-INF/views/include.jsp</include-prelude>
     </jsp-property-group>
   </jsp-config>
 
   <servlet>
-    <servlet-name>app</servlet-name>
+    <servlet-name>mvc-dispatcher</servlet-name>
     <servlet-class>
       org.springframework.web.servlet.DispatcherServlet
     </servlet-class>
@@ -52,7 +52,7 @@
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>app</servlet-name>
+    <servlet-name>mvc-dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 

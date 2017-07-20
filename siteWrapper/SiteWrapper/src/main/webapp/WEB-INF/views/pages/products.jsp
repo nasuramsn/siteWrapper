@@ -1,0 +1,1 @@
+<h2>Yahoo page</h2>
