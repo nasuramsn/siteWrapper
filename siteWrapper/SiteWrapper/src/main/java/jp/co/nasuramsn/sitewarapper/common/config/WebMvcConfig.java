@@ -1,5 +1,8 @@
 package jp.co.nasuramsn.sitewarapper.common.config;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

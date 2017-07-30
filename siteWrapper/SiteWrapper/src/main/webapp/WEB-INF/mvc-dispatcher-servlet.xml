@@ -26,7 +26,7 @@
   <bean id="messageSource"
                  class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
          <property name="basename"
-                value="classpath:/i18n/message"/>
+                value="classpath:/messages"/>
     </bean>
 
 <bean id="tilesViewResolver"
@@ -38,9 +38,19 @@
     class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
     <property name="definitions">
         <list>
-            <value>/WEB-INF/tiles-definitions.xml</value>
+            <value>/WEB-INF/views/**/tiles.xml</value>
         </list>
     </property>
 </bean>
 
+	<bean id="fruitsList"
+          class="org.springframework.beans.factory.config.ListFactoryBean">
+        <property name="sourceList">
+            <list value-type="java.lang.String">
+                <value>apple</value>
+                <value>banana</value>
+                <value>orange</value>
+            </list>
+        </property>
+    </bean>
 </beans>
